@@ -893,6 +893,12 @@ require('lazy').setup({
     ---@type TodoOptions
     ---@diagnostic disable-next-line: missing-fields
     opts = { signs = false },
+    keys = {
+      {
+        '<leader>td',
+        '<cmd>TodoTelescope<CR>',
+      },
+    },
   },
 
   { -- Collection of various small independent plugins/modules
