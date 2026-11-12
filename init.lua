@@ -280,11 +280,9 @@ do
     callback = function() vim.hl.on_yank() end,
   })
 
-  -- Disable Copilot by default
-  vim.api.nvim_create_autocmd('VimEnter', {
-    desc = 'Disable Copilot',
-    callback = function() vim.cmd 'Copilot disable' end,
-  })
+  -- Toggle GitHub Copilot (copilot.vim + CopilotChat) on/off.
+  -- Set to true to load them again (see lua/custom/plugins/copilot*.lua).
+  vim.g.use_copilot = false
 end
 
 -- ============================================================
